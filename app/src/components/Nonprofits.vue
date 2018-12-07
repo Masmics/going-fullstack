@@ -20,7 +20,7 @@ export default {
   },
   components: {
     AddNonprofit,
-    NonprofitList
+    NonprofitsList
   },
   created() {
     api.getNonprofits()
