@@ -1,3 +1,5 @@
+Hands Image Source: http://grantwatchdog.com/grants-for-nonprofits/
+
 # app
 
 ## Project setup

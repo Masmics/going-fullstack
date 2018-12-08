@@ -1,28 +1,47 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <header>
+      <img alt="nonprofits hands logo" src="./assets/nonprofits.jpg">
+      <Introduction msg="Top Oregon Nonprofits Directory!"/>
+      <nav>
+        <RouterLink to="/">Home</RouterLink>
+        <RouterLink to="/nonprofits">Nonprofits</RouterLink>
+      </nav>
+    </header>
+
+    <main>
+      <RouterView></RouterView>
+    </main>
+    
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
 export default {
-  name: 'app',
-  components: {
-    HelloWorld
-  }
+
 }
 </script>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style scoped>
+header {
+  height: 75px;
+  background: rgb(169, 186, 209);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header img {
+  height: 100%;
+}
+nav {
+  text-decoration: none;
+  color: black;
+  margin: 3px;
+  padding: 3px;
+  border: 1px solid black;
+}
+main {
+  padding: 8px;
 }
 </style>
