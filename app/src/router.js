@@ -1,4 +1,4 @@
-import VueRouter from './vue-router';
+import VueRouter from 'vue-router';
 import Home from './components/home/Home.vue';
 import Nonprofits from './components/nonprofits/Nonprofits.vue';
 
