@@ -2,7 +2,6 @@
   <div id="app">
     <header>
       <img alt="nonprofits hands logo" src="./assets/nonprofits.jpg">
-      <Introduction msg="Top Oregon Nonprofits Directory!"/>
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/nonprofits">Nonprofits</RouterLink>

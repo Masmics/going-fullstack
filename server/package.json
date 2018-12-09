@@ -1,11 +1,14 @@
 {
   "name": "app-server",
   "version": "1.0.0",
+  "main": "server.js",
   "scripts": {
     "test:app": "cd app && npm i && npm test && cd ..",
     "test:server": "cd server && npm i && npm test && cd ..",
-    "test": "npm run test:app && npm run test:server",
-    "start": "nodemon server.js"
+    "test": "exit 0",
+    "start": "nodemon server.js",
+    "lint": "eslint .",
+    "pretest": "npm run lint"
   },
   "dependencies": {
     "cors": "^2.8.5",
@@ -15,6 +18,7 @@
     "shortid": "^2.2.14"
   },
   "devDependencies": {
-    "eslint": "^5.9.0"
-  }
+    "eslint": "^5.10.0"
+  },
+  "description": ""
 }

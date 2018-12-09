@@ -20,8 +20,8 @@ app.get('/api/nonprofits', (req, res) => {
   const nonprofits = readData();
   if(req.query.name) {
     const match = req.query.name.toLowerCase();
-    const filtered = nonprofits.filter(non =>{
-      return non.name.toLowerCase().startsWith(match);
+    const filtered = nonprofits.filter(n => {
+      return n.name.toLowerCase().startsWith(match);
     });
     res.json(filtered);
   }
